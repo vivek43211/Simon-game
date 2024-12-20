@@ -15,7 +15,7 @@ let randomChosenColour = buttonColours[randomNumber];
 gamePattern.push(randomChosenColour);
 
 $("#"+randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100)
-var audio = new Audio("sounds/" + randomChosenColour + ".mp3");
+var audio = new Audio( randomChosenColour + ".mp3");
 audio.play();
 playSound(randomChosenColour);
 
@@ -33,7 +33,7 @@ $(".btn").click(function(){
 })
 
 function playSound(name){
-    var audio = new Audio("sounds/"+name+".mp3");
+    var audio = new Audio(name+".mp3");
     audio.play();
 }
 
